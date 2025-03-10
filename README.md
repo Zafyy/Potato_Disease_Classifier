@@ -5,7 +5,9 @@
 ![License](https://img.shields.io/badge/License-MIT-blue)
 ![Accuracy](https://img.shields.io/badge/Test_Accuracy-100%25-brightgreen)
 
-<img src="docs/prediction_example.png" width=400 alt="Prediction Example" align="right">
+## Prediction Example
+![image](https://github.com/user-attachments/assets/e607769e-5f0f-4766-8db6-fec42d0c5c9f)
+
 
 A production-ready CNN model that classifies potato leaf diseases with 100% accuracy. Built with TensorFlow/Keras, this system helps farmers detect Early Blight, Late Blight, and Healthy plants through leaf image analysis.
 
