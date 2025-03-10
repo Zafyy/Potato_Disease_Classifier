@@ -18,23 +18,37 @@ A production-ready CNN model that classifies potato leaf diseases with 100% accu
 - **Cross-Format Export** - .h5 & SavedModel support
 
 # 🧠 Model Architecture
-Model: "Sequential"
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- Resizing (Resizing)         (None, 256, 256, 3)       0         
-                                                                 
- Conv2D (Conv2D)             (None, 254, 254, 32)      896       
-                                                                 
- MaxPooling2D (MaxPooling2D  (None, 127, 127, 32)      0         
- )                                                               
-                                                                 ...(6 conv blocks)...
-=================================================================
-Total params: 183,747
+
+A 6-layer convolutional neural network (CNN) designed for potato disease classification. Built with TensorFlow/Keras, this architecture achieves high accuracy while maintaining computational efficiency.
+
+## Key Features
+
+- **Input Preprocessing:**  
+  - Automatic resizing to 256x256  
+  - Normalization
+
+- **Convolutional Blocks:**  
+  - 6 Conv2D layers with ReLU activation
+
+- **Downsampling:**  
+  - MaxPooling2D layers for feature reduction
+
+- **Output Layer:**  
+  - Softmax activation for 3-class classification
+
+- **Total Parameters:**  
+  - 183,747 trainable parameters
 
 # 📊 Performance Metrics
 
-Metric	   Training	    Validation	  Test
-_________________________________________________________________
-Accuracy	  99.48%	      100%	      100%
-Loss	      0.0189	      0.0064	    0.0063
+The model achieves state-of-the-art performance on the PlantVillage potato disease dataset, demonstrating robust generalization across training, validation, and test sets.
+
+### Key Results
+
+- **Training Accuracy:** 99.48%
+- **Validation Accuracy:** 100%
+- **Test Accuracy:** 100%
+
+- **Training Loss:** 0.0189
+- **Validation Loss:** 0.0064
+- **Test Loss:** 0.0063
